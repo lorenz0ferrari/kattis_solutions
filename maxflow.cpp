@@ -8,7 +8,8 @@ vector<vector<int64_t>> c;
 vector<vector<int64_t>> o;
 
 const int64_t INF = 1LL << 32;
-int64_t dfs(int64_t s, int64_t t, vector<int64_t> &par) { // dijkstra better performance on big flows
+// dijkstra evita i casi cattivi ma con pragma passa così, lol
+int64_t dfs(int64_t s, int64_t t, vector<int64_t> &par) {
   fill(par.begin(), par.end(), -1);
 
   stack<pair<int64_t, int64_t>> st;
