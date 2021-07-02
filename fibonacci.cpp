@@ -28,24 +28,6 @@ std::vector<int> z_algo(std::string s) {
 }
 
 
-/*
-
-a: rep 0
-b: rep 1
-c: rep 00
-d: rep 01
-e: rep 10
-f: rep 11
-
-a[i] = a[i - 1] + a[i - 2]              a[0] = 1, a[1] = 0
-b[i] = b[i - 1] + b[i - 2]              b[0] = 0, b[1] = 1
-c[i] = 0 (...)
-d[i] = d[i - 1] + d[i - 2] + (i & 1)    d[0] = 0, d[1] = 0
-e[i] = e[i - 1] + e[i - 2]              e[0] = 0, e[1] = 0
-f[i] = f[i - 1] + f[i - 2] + !(i & 1)   f[0] = 0, f[1] = 0
-
-*/
-
 string F[30];
 uint64_t fb[30];
 uint64_t a[101];
