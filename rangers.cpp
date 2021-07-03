@@ -1,5 +1,3 @@
-// https://icpc.kattis.com/problems/rangers
-
 #include <bits/stdc++.h>
 using namespace std;
 
