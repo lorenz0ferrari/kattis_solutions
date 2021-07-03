@@ -1,4 +1,4 @@
-# Kattis
+# kattis
 
 ### Problems from [open.kattis.com](https://open.kattis.com)
 
