@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#pragma GCC optimize("Ofast")
 using namespace std;
 
 const int N = 102;

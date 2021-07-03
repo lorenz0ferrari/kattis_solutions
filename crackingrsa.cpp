@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#pragma GCC optimize ("O3")
-#pragma GCC optimize ("Ofast")
 using namespace std;
 
 int64_t fexp(int64_t x, int64_t y, int64_t mod) {

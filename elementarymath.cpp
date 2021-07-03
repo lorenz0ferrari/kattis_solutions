@@ -1,7 +1,4 @@
-// maximum matching in a bipartite graph
 #include <bits/stdc++.h>
-#pragma GCC optimize ("O3")
-#pragma GCC optimize ("Ofast")
 using namespace std;
 
 #define int int64_t
