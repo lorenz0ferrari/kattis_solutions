@@ -50,19 +50,16 @@ string solve(int n) {
 
     LL Areaa = 0, Areab = 0;
     for (int i = 0; i < n; ++i) {
-        LL x = d(a[i], a[(i + 1) % n]);
-        LL y = d(b[i], b[(i + 1) % n]);
-        if (fr(x, y) != scaling2) return "dissimilar";
+        if (fr(d(a[0], a[i]), d(b[0], b[i])) != scaling2) return "dissimilar";
+        if (fr(d(a[1], a[i]), d(b[1], b[i])) != scaling2) return "dissimilar";
 
         LL p = (a[i] - a[(i + 2) % n]) ^ (a[(i + 1) % n] - a[(i + 2) % n]);
         LL q = (b[i] - b[(i + 2) % n]) ^ (b[(i + 1) % n] - b[(i + 2) % n]);
-        if (sgn(p) != sgn(q)) return "dissimilar";
-
         Areaa += p;
         Areab += q;
     }
 
-    if (fr(Areaa, Areab) != scaling2) return "dissimilar";
+    if (sgn(Areaa) != sgn(Areab)) return "dissimilar";
 
     return "similar";
 }
