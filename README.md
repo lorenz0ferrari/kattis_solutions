@@ -1,6 +1,6 @@
 # Kattis
 
-### Problems from [open.kattis.com](open.kattis.com)
+### Problems from [open.kattis.com](https://open.kattis.com)
 
 Solutions are written in C++
 
