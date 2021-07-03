@@ -1,12 +1,5 @@
 #include <bits/stdc++.h>
-#pragma GCC optimize ("O3")
 using namespace std;
-
-/*
--> union-find
--> condensation graph
--> sink
-*/
 
 const int N = 260000;
 const int INF = 1e9;

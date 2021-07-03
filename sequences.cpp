@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#pragma GCC optimize ("O3")
-#pragma GCC optimize ("Ofast")
 using namespace std;
 
 const int64_t mod = 1e9 + 7;
