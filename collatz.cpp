@@ -1,6 +1,4 @@
 #include <bits/stdc++.h>
-#pragma GCC optimize ("O3")
-#pragma GCC optimize ("Ofast")
 using namespace std;
 
 void solve(int64_t A, int64_t B) {
