@@ -1,8 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 bool m[101][101];
 bool vis[101][101];
 int a, b, caso = 0;
+
 void dfs(int i, int j) {
     if(i<0 || j<0 || i>=a || j>=b) return;
     if(vis[i][j] || !m[i][j])
