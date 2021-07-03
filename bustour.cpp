@@ -2,8 +2,7 @@
 using namespace std;
 
 #define int long long
-
-typedef vector<int> vi;
+using vi = vector<int>;
 
 int solve(int n, int m) {
     vector<vi> d(n, vi (n, 1e9));
