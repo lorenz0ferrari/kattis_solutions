@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 // GEO TEMPLATE ////////////////////////////////////////////////////////////////
 
 typedef long long LL;
