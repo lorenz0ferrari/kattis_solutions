@@ -16,7 +16,7 @@ std::vector<int> z_algo(std::string s) {
 			if (i + Z[i - L] <= R)
 				Z[i] = Z[i - L];
 			else {
-				L = i; // s[R] != s[R-L+1], sarei andato avanti
+				L = i;
 				while (R < n && s[R - L] == s[R])
 					R++;
 				Z[i] = R - L; R--;
