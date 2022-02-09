@@ -55,7 +55,6 @@ int main() {
       E[start] += steps * chain.a[start][mask];
     }
   }
-
   while (steps < 1e18) {
     found.assign(1 << n, 1);
     for (int start = 0; start < (1 << n); ++start) {
