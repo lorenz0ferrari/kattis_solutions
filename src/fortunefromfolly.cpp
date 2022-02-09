@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#pragma GCC optimize ("O3")
 using namespace std;
 
 using matrix_t = double;
@@ -37,10 +36,6 @@ inline Matrix matrix_exp(Matrix x, int y) {
 }
 
 int main() {
-#ifdef LORENZO
-  freopen("input.txt", "r", stdin);
-  freopen("output.txt", "w", stdout);
-#endif
   int n; cin >> n;
   int k; cin >> k;
   double p; cin >> p;
@@ -51,9 +46,6 @@ int main() {
     chain.a[mask][mask >> 1 | (1 << (n-1))] = p;
   }
 
-EXP[mask] = EXP[mask] + n * found[partendo da mask] * { chain[mask][nxt] * EXP[nxt] }
-chain *= chain
-*/
   vector<double> E(1 << n, 0);
   vector<double> found(1 << n, 1);
   double steps = 1;
