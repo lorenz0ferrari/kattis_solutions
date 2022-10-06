@@ -17,7 +17,7 @@ int main() {
     for (int j = n-1; j >= 0; --j) {
       d[j] = 1e9;
       if (j >= i) d[j] = min(d[j], prv[j - i] + v[j]);
-      if (j + i < n) d[j ] = min(d[j], d[j + i] + v[j]);
+      if (j + i < n) d[j] = min(d[j], d[j + i] + v[j]);
     }
     ans = min(ans, d[n-1]);
   }
